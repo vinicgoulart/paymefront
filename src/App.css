@@ -1,11 +1,14 @@
 .App {
   text-align: center;
+  height: 100vh;
+  background-color: #FCFCFC;
 }
 
 .navbar{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: #EEF2E3;
 }
 
 .LogoDiv{
@@ -16,11 +19,14 @@
   margin-left: 1rem;
   padding: 1rem 1.5rem 1rem 1.5rem;
   font-weight: 700;
+  font-size: 18px;
+  color: #C8F169;
 }
 
 .logoImg span{
-  color: green;
+  color: #043F2E;
   font-weight: 700;
+  font-size: 18px;
 }
 
 .actionDiv{
@@ -31,20 +37,88 @@
 .Loginbtn{
   margin-right: 1rem;
   padding: 1rem 1.5rem 1rem 1.5rem;
-  color: #007aff;
-  border: 1px solid #52a2f8;
+  color: #2A6F2B;
+  border: 1px solid #2A6F2B;
 
 }
 
 .Registerbtn{
   margin-right: 1rem;
   padding: 1rem 1.5rem 1rem 1.5rem;
-  background-color: #007aff;
-  color: white;
+  background-color: #2A6F2B;
+  color: #C8F169;
   border-radius: 10px;
 }
 
+/* End of Navbar, start of InfoDiv */
+
+.appInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoText{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 18px;
+}
+
+.infoText a{
+  font-weight: 700;
+  color: #043F2E;
+}
+
+.infoText span{
+  font-weight: 700;
+  color: #C8F169;
+}
+
+.infoSignup{
+  background-color: #043F2E;
+  border-radius: 10px;
+  color: white;
+  padding: 1rem 0.2rem 1rem 1rem;
+  display: inline-flex;
+  width: 6rem;
+}
+
+.infoImg{
+  width: 20rem;
+  height: 12rem;
+}
+
+/* Footer section! */
+
+footer{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #043F2E;
+  color: white;
+}
+
+.footerLogo{
+  margin-left: 1rem;
+  font-size: 24px;
+}
+
+.terms{
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+
+.terms p{
+  margin-left: 1rem;
+}
+
 @media (min-width: 1024px){
+  
   .logoImg:hover{
     cursor: pointer;
   }
@@ -56,4 +130,45 @@
   .Registerbtn{
     cursor: pointer;
   }
+
+  /* End of Navbar, start of InfoDiv */
+
+  .appInfo{
+    display: flex;
+    flex-direction: row;
+  }  
+
+  .infoText{
+    font-size: 24px;
+    width: 60%;
+  }
+
+  .infoSignup{
+    width: 8rem;
+  }
+
+  .infoSignup:hover{
+    cursor: pointer;
+
+  }
+
+  .infoImg{
+    height: 8rem;
+  }
+
+  /* Footer section */
+
+  footer{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footerLogo{
+    cursor: pointer;
+  }
+
+  .terms p:hover{
+    cursor: pointer;
+  }
+
 }
