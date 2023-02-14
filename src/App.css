@@ -117,6 +117,79 @@ footer{
   margin-left: 1rem;
 }
 
+/* Modal section */
+
+.centered{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal{
+  width: 20rem;
+  height: 25rem;
+  background-color: white;
+  color: black;
+  z-index: 1000;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+  position: relative;
+  transform: translate(0%, 0%);
+}
+
+.modalHeader{
+  background-color: #EEF2E3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modalHeader p {
+  margin: 1rem;
+}
+
+.modalBody{
+  display: flex;
+  flex-direction: column;
+}
+
+.modalTitle{
+  display: flex;
+  align-self: center;
+}
+
+.modalBody input{
+  font-size: 18px;
+  margin: 1rem;
+  height: 20px;
+  padding: 0.5rem;
+  border: 0;
+  border-bottom: 1px solid #2A6F2B;
+  outline: none;
+}
+
+.modalFooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.signInBtn{
+  display: flex;
+  align-self: center;
+  background-color: #2A6F2B;
+  color: #C8F169;
+  padding: 1rem 2rem 1rem 2rem;
+  outline: 0;
+  border: 0;
+}
+
+.closeModalBtn{
+  display: flex;
+  align-self: center;
+}
+
 @media (min-width: 1024px){
   
   .logoImg:hover{
@@ -169,6 +242,18 @@ footer{
 
   .terms p:hover{
     cursor: pointer;
+  }
+
+  /* Login Modal section */
+
+  .xBtn:hover, .closeModalBtn:hover{
+    cursor: pointer;
+    color: red;
+  }
+
+  .signInBtn:hover{
+    cursor: pointer;
+    color: #C8F169;
   }
 
 }
