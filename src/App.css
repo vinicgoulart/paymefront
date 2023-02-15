@@ -50,6 +50,13 @@
   border-radius: 10px;
 }
 
+.logoutBtn{
+  margin-right: 1rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  color: red;
+  border: 1px solid red;
+}
+
 /* End of Navbar, start of InfoDiv */
 
 .appInfo{
@@ -188,6 +195,70 @@ footer{
 .closeModalBtn{
   display: flex;
   align-self: center;
+}
+
+/* Dashboard section */
+
+.actionButton{
+  background-color: #C8F169;
+  padding: 1rem;
+  border: 1px solid #043F2E;
+  cursor: pointer;
+}
+
+.card{
+  border: 1px solid #043F2E;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.cardHeader{
+  display: flex;
+  flex-direction: row;
+  background-color: #EEF2E3;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cardHeader p{
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.cardBody{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.cardFooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cardFooter p{
+  margin: 1rem;
+}
+
+.deleteButton{
+  background-color: rgba(247, 83, 83, 0.884);
+  padding: 1rem;
+  border: 1px solid rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+.editButton{
+  background-color: rgb(94, 94, 250);
+  padding: 1rem;
+  border: 1px solid rgb(19, 19, 145);
+  cursor: pointer;
 }
 
 @media (min-width: 1024px){
